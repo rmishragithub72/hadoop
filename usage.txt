@@ -1,0 +1,7 @@
+java ->
+hadoop jar Desktop/MapReduce.jar /user/cloudera/data/Product.lst /user/cloudera/data/Order.lst /user/cloudera/data/MPOut
+
+python ->
+hadoop jar /usr/lib/hadoop-mapreduce/hadoop-streaming-2.6.0-cdh5.10.0.jar -mapper wordcount_mapper.py -reducer wordcount_reducer.py -input /user/cloudera/data/siva.txt -output /user/cloudera/data/pyout -file wordcount_mapper.py -file wordcount_reducer.py
+
+/opt/cloudera/parcels/CDH/jars/hadoop-streaming-2.6.0-cdh5.11.0.jar
